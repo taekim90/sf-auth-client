@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import FileUploadForm from '../FileUploadForm'
 
 export default function Profile({ currentUser }) {
   const [msg, setMsg] = useState('') 
@@ -37,6 +38,8 @@ export default function Profile({ currentUser }) {
       <h4>The message from the auth locked route is:</h4>
       
       <h6>{msg}</h6>
+
+      <FileUploadForm />
     </div>
   )
 }
